@@ -25,10 +25,11 @@ contract Roulette is Ownable, VRFConsumerBaseV2 {
 
     VRFCoordinatorV2Interface COORDINATOR;
 
+    /** BSC TESTNET */
     uint64 s_subscriptionId;
-    address vrfCoordinator = 0x2Ca8E0C643bDe4C2E08ab1fA0da3401AdAD7734D;
+    address vrfCoordinator = 0x6A2AAd07396B36Fe02a22b33cf443582f682c82f;
     bytes32 keyHash =
-        0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15;
+        0xd4bb89654db74673a187bd804519e65e3f71a52bc55f11da7601a13dcf505314;
     uint32 callbackGasLimit = 1000000;
     uint16 requestConfirmations = 3;
     uint32 numWords = 1;
